@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+body {
+    background-color: #121212; 
+    color: #e0e0e0; 
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 800px;
+    max-width: 95%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #00aaff; 
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #b0b0b0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #b0b0b0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1e1e1e; 
+    color: #fff;
+    resize: vertical;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.button-group {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00aaff; 
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.output {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1a1a1a; /* dark background */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* spacing between children */
+}
+
+.output h3 {
+    margin: 0;
+    color: #00aaff; /* blue headings */
+    font-size: 16px;
+}
+
+.output input,
+.output textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #eee;
+    font-size: 14px;
+    resize: vertical; /* allow vertical resizing for textarea */
+    box-sizing: border-box;
+}
+
+.output input {
+    height: 35px;
+}
+
+.output textarea {
+    min-height: 250px;
+}
